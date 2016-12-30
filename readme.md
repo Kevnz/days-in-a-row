@@ -11,4 +11,17 @@ const allTheDays = days(new Date('01/01/2017'), 45);
   '2017-02-13',
   '2017-02-14' ]
 */
+
+// You can then map the results to javascript date object
+const allTheDates = allTheDays((day) => new Date(day));
+// Then something like daylight to format the day for display
+var daylight = require('daylight');
+const prettyDates = allTheDates.map((day) => daylight('l, F jS', day));
+/*
+[ 'Monday, Jan 1st',
+  'Tuesday, Jan 2nd',
+  ...
+  'Monday, Feb 13th',
+  'Tuesday, Feb 14th' ]
+ */
 ```
