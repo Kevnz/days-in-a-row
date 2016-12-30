@@ -1,6 +1,6 @@
 {
   "name": "days-in-a-row",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Return an array of days",
   "main": "index.js",
   "scripts": {
