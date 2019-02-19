@@ -1,7 +1,12 @@
 # days-in-a-row
+
+[![npm version](https://badge.fury.io/js/days-in-a-row.svg)](https://badge.fury.io/js/days-in-a-row) [![Build Status](https://travis-ci.org/Kevnz/days-in-a-row.svg?branch=master)](https://travis-ci.org/Kevnz/days-in-a-row)
+
 Return an array of dates (strings) based on a start date and a number.
+
 ## Usage
-```
+
+```js
 const days = require('days-in-a-row');
 const allTheDays = days(new Date('01/01/2017'), 45);
 /* the result
