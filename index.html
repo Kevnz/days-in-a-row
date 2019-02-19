@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>days-in-a-row</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <meta name="description" content="Return an array of days" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+
+<body>
+  <div class="container">
+  <h1 id="days-in-a-row">days-in-a-row</h1>
+<p>Return an array of dates (strings) based on a start date and a number.</p>
+<h2 id="usage">Usage</h2>
+<pre><code class="js language-js">const days = require('days-in-a-row');
+const allTheDays = days(new Date('01/01/2017'), 45);
+/* the result
+[ '2017-01-01',
+  '2017-01-02',
+  ...
+  '2017-02-13',
+  '2017-02-14' ]
+*/
+
+// You can then map the results to javascript date object
+const allTheDates = allTheDays((day) =&gt; new Date(day));
+// Then something like daylight to format the day for display
+var daylight = require('daylight');
+const prettyDates = allTheDates.map((day) =&gt; daylight('l, F jS', day));
+/*
+[ 'Monday, Jan 1st',
+  'Tuesday, Jan 2nd',
+  ...
+  'Monday, Feb 13th',
+  'Tuesday, Feb 14th' ]
+ */</code></pre>
+  </div>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-64038939-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-64038939-2');
+</script>
+
+</body>
