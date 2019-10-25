@@ -26,13 +26,13 @@
   },
   "homepage": "https://github.com/Kevnz/days-in-a-row#readme",
   "dependencies": {
-    "date-arithmetic": "^3.1.0",
-    "year-month-day": "^2.0.0"
+    "date-arithmetic": "^4.0.1",
+    "year-month-day": "^3.0.0"
   },
   "devDependencies": {
-    "@kev_nz/eslint-config": "^3.2.0",
-    "@kev_nz/publisher": "^1.0.1",
-    "eslint": "^5.14.1",
-    "tap": "^12.5.3"
+    "@kev_nz/eslint-config": "^5.0.0",
+    "@kev_nz/publisher": "^4.0.1",
+    "eslint": "^6.5.1",
+    "tap": "^14.8.2"
   }
 }
